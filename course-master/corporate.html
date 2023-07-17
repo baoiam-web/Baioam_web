@@ -31,6 +31,19 @@
     <script src="../JS/navbar.js" defer></script>
 </head>
 
+<style>
+    .relative{
+      position: absolute;
+      left: 277px;
+      top: 18px;
+      width: 250px !important;
+    }
+    .test{
+      float: left;
+      margin: 5px 19px;
+    }
+  </style>
+
 <body>
     <header style="padding-top:50px;">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow p-2" id="navbar">
@@ -57,42 +70,33 @@
                   <a class="dropdown-item" href="../Hire-From-Us/index.html">Hire from us</a>
                 </div>
               </li>
-              <li class="nav-item dropdown" id="nav-courses-one">
+              <li class="nav-item">
+                <a href="./../ITIE-master/index.html" class="nav-link">ITIE <span class="bar"></span></a>
+                <ul class="sub-courses-list"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Courses
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../course-master/index.html">Courses</a>
-                  <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
-                  <a class="dropdown-item" href="../ITIE-master/index.html">ITIE Courses</a>
-                </div>
-              </li>
-
-              <li class="nav-item dropdown" id="nav-courses-two">
-                <a class="nav-link" href="#" role="button">Courses</a>
-                <ul class="nav-courses-list">
-                  <li>
-                    <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
+                  <a class="dropdown-item dropdown-toggle" href="./career/career.html" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Courses</a>
+                  <div class="dropdown-menu relative" aria-labelledby="navbarDropdown">
                     <ul class="sub-courses-list">
-                      <li><a>Content Writing</a></li>
-                      <li><a>Graphic Designing</a></li>
-                      <li><a>Seo Marketing</a></li>
-                      <li><a>Digital Marketing Course</a></li>
-                      <li><a>Project Management</a></li>
-                      <li><a>Human Resources</a></li>
-                      <li><a>Corporate Law</a></li>
+                      <li><a class="test" href="./../course-master/index.html">Web Development</a></li>
+                      <li><a class="test" href="./../course-master/content_wr.html">Content Writing</a></li>
+                      <li><a class="test" href="./../course-master/Graphic_Designing.html">Graphic Designing</a></li>
+                      <li><a class="test" href="./../course-master/seo.html">Seo Marketing</a></li>
+                      <li><a class="test" href="./../course-master/Digital_Marketing.html">Digital Marketing Course</a></li>
+                      <li><a class="test" href="./../course-master/Project_Management.html">Project Management</a></li>
+                      <li><a class="test" href="./../course-master/Human_Resources.html">Human Resources</a></li>
+                      <li><a class="test" href="./../course-master/corporate.html">Corporate Law</a></li>
                     </ul>
-                  </li>
-                  <li>
-                    <a href="../Entre-master/index.html">Enterpreneurship Courses <span class="bar"></span></a>
-                    <ul class="sub-courses-list"></ul>
-                  </li>
-                  <li >
-                    <a href="../ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
-                    <ul class="sub-courses-list"></ul>
-                  </li>
-                </ul>
+                  </div>
+                  <a class="dropdown-item" href="./../Entre-master/index.html">Enterpreneurship Courses</a>
+                </div>
               </li>
 
               <li class="nav-item">
@@ -102,7 +106,7 @@
                 <a class="nav-link" href="../Baoiam-refer-page-main/index.html">Refer & Earn</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" id="active" href="./contact-page/index.html">Contact Us</a>
+                <a class="nav-link" id="active" href="../contact-page/index.html">Contact Us</a>
               </li>
     
               <li class="nav-item">

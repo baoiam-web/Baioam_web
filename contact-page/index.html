@@ -15,6 +15,18 @@
     integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+  <style>
+    .relative{
+      position: absolute;
+      left: 277px;
+      top: 18px;
+      width: 250px !important;
+    }
+    .test{
+      float: left;
+      margin: 5px 1px;
+    }
+  </style>
 
 </head>
 
@@ -56,10 +68,24 @@
               Courses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../course-master/index.html">Courses</a>
-              <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
+              <a class="dropdown-item dropdown-toggle" href="./career/career.html" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu relative" aria-labelledby="navbarDropdown">
+                <ul class="sub-courses-list">
+                  <li><a class="test" href="./../course-master/index.html">Web Development</a></li>
+                  <li><a class="test" href="./../course-master/content_wr.html">Content Writing</a></li>
+                  <li><a class="test" href="./../course-master/Graphic_Designing.html">Graphic Designing</a></li>
+                  <li><a class="test" href="./../course-master/seo.html">Seo Marketing</a></li>
+                  <li><a class="test" href="./../course-master/Digital_Marketing.html">Digital Marketing Course</a></li>
+                  <li><a class="test" href="./../course-master/Project_Management.html">Project Management</a></li>
+                  <li><a class="test" href="./../course-master/Human_Resources.html">Human Resources</a></li>
+                  <li><a class="test" href="./../course-master/corporate.html">Corporate Law</a></li>
+                </ul>
+              </div>
+              <a class="dropdown-item" href="./../Entre-master/index.html">Enterpreneurship Courses</a>
             </div>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="../Blog-Section-main/main-blog.html">Blog</a>
           </li>

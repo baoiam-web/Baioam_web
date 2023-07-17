@@ -40,7 +40,18 @@
 
   <!--Js-->
   <script src="JS/navbar.js" defer></script>
-
+<style>
+  .relative{
+    position: absolute;
+    left: 277px;
+    top: 18px;
+    width: 250px !important;
+  }
+  .test{
+    float: left;
+    margin: 5px 19px;
+  }
+</style>
 </head>
 
 <body>
@@ -72,57 +83,32 @@
             </div>
           </li>
 
-          <li class="nav-item dropdown" id="nav-courses-one">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          <li class="nav-item">
+            <a href="./ITIE-master/index.html" class="nav-link">ITIE <span class="bar"></span></a>
+            <ul class="sub-courses-list"></ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Courses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown-subcourses" data-toggle="dropdown" role="button">
-                    Regular Courses
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown-subcourses">
-                    <a class="dropdown-item" href="./course-master/index.html">Web Development</a>
-                    <a class="dropdown-item" href="./course-master/content_wr.html">Content Writing</a>
-                    <a class="dropdown-item" href="./course-master/Graphic_Designing.html">Graphic Designing</a>
-                    <a class="dropdown-item" href="./course-master/seo.html">Seo Marketing</a>
-                    <a class="dropdown-item" href="./course-master/Digital_Marketing.html">Digital Marketing Course</a>
-                    <a class="dropdown-item" href="./course-master/Project_Management.html">Project Management</a>
-                    <a class="dropdown-item" href="./course-master/Human_Resources.html">Human Resources</a>
-                    <a class="dropdown-item" href="./course-master/corporate.html">Corporate Law</a>
-                </div>
-              </a>
-              <a class="dropdown-item" href="./Entre-master/index.html">Entrepreneurship Course</a>
-              <a class="dropdown-item" href="./ITIE-master/index.html">ITIE Courses</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown" id="nav-courses-two">
-            <a class="nav-link" href="#" role="button">Courses</a>
-            <ul class="nav-courses-list">
-              <li>
-                <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
+              <a class="dropdown-item dropdown-toggle" href="./career/career.html" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Courses</a>
+              <div class="dropdown-menu relative" aria-labelledby="navbarDropdown">
                 <ul class="sub-courses-list">
-                  <li><a href="./course-master/index.html">Web Development</a></li>
-                  <li><a href="./course-master/content_wr.html">Content Writing</a></li>
-                  <li><a href="./course-master/Graphic_Designing.html">Graphic Designing</a></li>
-                  <li><a href="./course-master/seo.html">Seo Marketing</a></li>
-                  <li><a href="./course-master/Digital_Marketing.html">Digital Marketing Course</a></li>
-                  <li><a href="./course-master/Project_Management.html">Project Management</a></li>
-                  <li><a href="./course-master/Human_Resources.html">Human Resources</a></li>
-                  <li><a href="./course-master/corporate.html">Corporate Law</a></li>
+                  <li><a class="test" href="./course-master/index.html">Web Development</a></li>
+                  <li><a class="test" href="./course-master/content_wr.html">Content Writing</a></li>
+                  <li><a class="test" href="./course-master/Graphic_Designing.html">Graphic Designing</a></li>
+                  <li><a class="test" href="./course-master/seo.html">Seo Marketing</a></li>
+                  <li><a class="test" href="./course-master/Digital_Marketing.html">Digital Marketing Course</a></li>
+                  <li><a class="test" href="./course-master/Project_Management.html">Project Management</a></li>
+                  <li><a class="test" href="./course-master/Human_Resources.html">Human Resources</a></li>
+                  <li><a class="test" href="./course-master/corporate.html">Corporate Law</a></li>
                 </ul>
-              </li>
-              <li>
-                <a href="./Entre-master/index.html">Enterpreneurship Courses <span class="bar"></span></a>
-                <ul class="sub-courses-list"></ul>
-              </li>
-              <li >
-                <a href="./ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
-                <ul class="sub-courses-list"></ul>
-              </li>
-            </ul>
+              </div>
+              <a class="dropdown-item" href="./Entre-master/index.html">Enterpreneurship Courses</a>
+            </div>
           </li>
 
           <li class="nav-item">
@@ -239,7 +225,7 @@
           </div>
           <div class="div_text">
             <h2>500+ Projects</h2>
-            <p class="col-md-7 div_text_para">BAOIAM has excelled in + realtime Corporate and Client projects.</p>
+            <p class="col-md-7 div_text_para">BAOIAM has excelled in 500+ realtime Corporate and Client projects.</p>
           </div>
         </div>
       </div>

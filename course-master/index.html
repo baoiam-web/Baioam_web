@@ -31,6 +31,19 @@
     <script src="../JS/navbar.js" defer></script>
 </head>
 
+<style>
+    .relative{
+      position: absolute;
+      left: 277px;
+      top: 18px;
+      width: 250px !important;
+    }
+    .test{
+      float: left;
+      margin: 5px 19px;
+    }
+  </style>
+
 <body>
     <header style="padding-top:50px;">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow p-2" id="navbar">
@@ -57,56 +70,35 @@
                   <a class="dropdown-item" href="../Hire-From-Us/index.html">Hire from us</a>
                 </div>
               </li>
-              <li class="nav-item dropdown" id="nav-courses-one">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+
+              <li class="nav-item">
+                <a href="./../ITIE-master/index.html" class="nav-link">ITIE <span class="bar"></span></a>
+                <ul class="sub-courses-list"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
                   Courses
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown-subcourses" data-toggle="dropdown" role="button">
-                        Regular Courses
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown-subcourses">
-                        <a class="dropdown-item">Graphic Designing</a>
-                        <a class="dropdown-item">Seo Marketing</a>
-                        <a class="dropdown-item">Digital Marketing Course</a>
-                        <a class="dropdown-item">Project Management</a>
-                        <a class="dropdown-item">Human Resources</a>
-                        <a class="dropdown-item">Corporate Law</a>
-                    </div>
-                  </a>
-                  <a class="dropdown-item" href="../Entre-master/index.html">Entrepreneurship Course</a>
-                  <a class="dropdown-item" href="../ITIE-master/index.html">ITIE Courses</a>
+                  <a class="dropdown-item dropdown-toggle" href="./career/career.html" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Courses</a>
+                  <div class="dropdown-menu relative" aria-labelledby="navbarDropdown">
+                    <ul class="sub-courses-list">
+                      <li><a class="test" href="./../course-master/index.html">Web Development</a></li>
+                      <li><a class="test" href="./../course-master/content_wr.html">Content Writing</a></li>
+                      <li><a class="test" href="./../course-master/Graphic_Designing.html">Graphic Designing</a></li>
+                      <li><a class="test" href="./../course-master/seo.html">Seo Marketing</a></li>
+                      <li><a class="test" href="./../course-master/Digital_Marketing.html">Digital Marketing Course</a></li>
+                      <li><a class="test" href="./../course-master/Project_Management.html">Project Management</a></li>
+                      <li><a class="test" href="./../course-master/Human_Resources.html">Human Resources</a></li>
+                      <li><a class="test" href="./../course-master/corporate.html">Corporate Law</a></li>
+                    </ul>
+                  </div>
+                  <a class="dropdown-item" href="./../Entre-master/index.html">Enterpreneurship Courses</a>
                 </div>
               </li>
-
-              <li class="nav-item dropdown" id="nav-courses-two">
-                <a class="nav-link" href="#" role="button">Courses</a>
-                <ul class="nav-courses-list">
-                  <li>
-                    <a>Courses <span class="arrow-icon">></span><span class="bar"></span></a>
-                    <ul class="sub-courses-list">
-                      <li><a>Content Writing</a></li>
-                      <li><a>Graphic Designing</a></li>
-                      <li><a>Seo Marketing</a></li>
-                      <li><a>Digital Marketing Course</a></li>
-                      <li><a>Project Management</a></li>
-                      <li><a>Human Resources</a></li>
-                      <li><a>Corporate Law</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="../Entre-master/index.html">Enterpreneurship Courses <span class="bar"></span></a>
-                    <ul class="sub-courses-list"></ul>
-                  </li>
-                  <li >
-                    <a href="../ITIE-master/index.html">ITIE Courses<span class="bar"></span></a>
-                    <ul class="sub-courses-list"></ul>
-                  </li>
-                </ul>
-              </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="../Blog-Section-main/main-blog.html">Blog</a>
               </li>
@@ -532,7 +524,7 @@
                 From Us</a>
             </p>
             <p>
-                <a href="#!" class="text-white" style="font-size: 0.8rem;"><i class="fa-solid fa-angle-right mr-2"></i>BTH
+                <a href="../Comming-Soon/Coming_soon.html" class="text-white" style="font-size: 0.8rem;"><i class="fa-solid fa-angle-right mr-2"></i>BTH
                 - Talent Hunt Exam</a>
             </p>
             <p>
@@ -550,7 +542,7 @@
                     class="fa-solid fa-angle-right mr-2"></i>Blog</a>
             </p>
             <p>
-                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i
+                <a href="../Comming-Soon/Coming_soon.html" class="text-white" style="font-size: 0.9rem;"><i
                     class="fa-solid fa-angle-right mr-2"></i>Events and Contest</a>
             </p>
             <p>
@@ -574,7 +566,7 @@
                     class="fa-solid fa-angle-right mr-2"></i>Product Management</a>
             </p>
             <p>
-                <a href="#!" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>SAP
+                <a href="../Comming-Soon/Coming_soon.html" class="text-white" style="font-size: 0.9rem;"><i class="fa-solid fa-angle-right mr-2"></i>SAP
                 FICO</a>
             </p>
             </div>

@@ -891,7 +891,118 @@ form input{
     line-height: 1.6;
 }
 /* -----------faq------------- */
+/* -----------faq------------- */
 
+.container-main{
+  display: flex;
+  justify-content: center;
+  margin: 50px 6% ;
+}
+
+.accordion {
+  width: 72%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  
+}
+
+.ac-main h1{
+  margin-top: 50px;
+  font-size: 50px;
+  text-align: center;
+  color:#031864;
+  font-weight: bold; 
+}
+
+.ac-main h1 span{
+  font-size: 50px;
+  background: -webkit-linear-gradient(45deg,#fa2424,#fb8721);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid red;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #050237;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+ 
+ 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header:hover{
+  color:rgb(251, 96, 13);
+  font-size: 1.05rem;
+} 
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color:rgb(99, 99, 99);
+  font-weight: 500;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.accordion-item-body-content ul{
+    margin: 0 15px;
+}
+
+.img{
+  width:45%;
+ margin:100px 0;
+}
+
+.img img{
+width: 500px;
+height: 500px;
+padding-bottom: 10px;
+padding-right: 40px;
+padding-left: 5px;
+
+}
+
+.img{
+    width:50%;
+   margin:100px 0;
+}
+
+.img img{
+width: 600px;
+height: 500px;
+padding-bottom: 10px;
+padding-right: 40px;
+padding-left: 5px;
+
+}
+/* 
 .container-main{
     display: flex;
     justify-content: center;
@@ -988,7 +1099,7 @@ form input{
 
   }
   
-
+ */
 
 
 @media screen and (max-width:1000px)

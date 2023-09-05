@@ -1,3 +1,5 @@
+
+
 body {
     padding: 0;
     margin: 0;
@@ -111,7 +113,7 @@ header .nav-item a:hover {
     font-size: 3rem;
     font-weight: bold;
     color: #040052;
-    text-align: left;
+    text-align: center;
 }
 
 .first-half .text-div h1 span {
@@ -568,15 +570,19 @@ footer .contact-us p div i {
     }
     
     .second-half .text-div, .second .text-div, .third .text-div{
-        width: 85vw;
+        width: 100vw;
     }
     .third .program img{
         width: 40vw;
+    }
+    #ht{
+        width: 130vw;
     }
 }
 @media (max-width:800px){
     .first-half{
         flex-direction: column;
+        padding-bottom: 2rem;
     }
     .first-half .text-div{
         margin: 0;
@@ -586,7 +592,7 @@ footer .contact-us p div i {
         width: 70vw;
     }
     .first-half img{
-        width: 60vw;
+        width: 85vw;
         display: block;
         margin: auto;
     }
@@ -597,7 +603,7 @@ footer .contact-us p div i {
         flex-direction: column;
     }
     .second-half img{
-        width: 35vw;
+        width: 70vw;
     }
     .second ul{
         margin-left: 0.5rem;

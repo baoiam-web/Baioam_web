@@ -841,6 +841,9 @@ header .nav-item a:hover {
     padding-top: 2em;
     width: 20em;
   }
+  .strong_mindset-img img{
+    width: 100%;
+  } 
     
   .strong_mindset-img .heading{
     bottom:3rem;

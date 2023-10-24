@@ -800,7 +800,6 @@ article p {
 }
 
 .main-contact {
-  /* background: #685f78; */
   display: grid;
   /* width: 100%; */
   grid-template-rows: auto;
@@ -808,6 +807,7 @@ article p {
   /* grid-template-columns:57% 1fr; */
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
+  justify-content: center;
 }
 
 .contact-left {
@@ -858,8 +858,7 @@ article p {
 
 .contact-left-1 .contact-item {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
   /* padding: 40px; */
   padding-top: 20px;
   color: #9a9bb2;
@@ -884,7 +883,9 @@ article p {
 
 .contact-left-1 .contact-item .contact-menu {
   /* background-color: #62e130; */
-  display: contents;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .contact-left-1 .contact-item .contact-menu h3 {
@@ -1183,7 +1184,7 @@ article p {
       margin: -25px;
   }
   .contact-btn {
-      margin: 0;
+      margin-top: 10px;
       position: absolute;
       top: 110%;
       left: 50%;

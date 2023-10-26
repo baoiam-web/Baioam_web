@@ -158,13 +158,14 @@ header .nav-item a:hover {
   border-radius: 30px;
 }
 .price{
+  margin-top: 4rem;
   height: 370px;
   width: 400px;
   text-align:center;
   font-family: "Open Sans";
   border-radius: 30px;
   background-image:linear-gradient(to right, #fa2424, #fb471f, #fc601c, #fc751c, #fb8721)
-  margin-top: 4rem;
+  
 }
 .price h1{
   margin-top: 150px;

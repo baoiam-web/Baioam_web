@@ -129,6 +129,7 @@ header .nav-item a:hover {
   background: #ffffff;
   padding: 5px 5px;
   border-radius: 10px;
+	
   
 }
 
@@ -660,6 +661,7 @@ form{
     width: fit-content;
     box-shadow: 5px 5px 10px rgb(180, 174, 174);
     margin-top: 20px;
+    margin-inline: auto;
     
 }
 form input{
@@ -679,6 +681,7 @@ form input{
     color: rgb(255, 255, 255);
     font-size: 15px;
     transition: transform 0.5s;
+    display: inline;
 
 }
 .bttn:hover{

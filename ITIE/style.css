@@ -1,21 +1,36 @@
-.intern-reviews .carousel {
+/* .intern-reviews .carousel {
 display: flex;
 width: 220%;
 padding: 20px 0;
 height: 520px;
+} */ 
+.intern-reviews{
+    border: 4px solid black;
+
+}
+
+.intern-reviews .slider{
+    border: 4px solid green;
+    display: grid;
+    place-items:center;
+    margin:auto;
+    overflow: hidden;
+
 }
 
 .intern-reviews .carousel__face {
 width: 560px;
 height: 380px;
-margin-right: 50px;
-margin-top: 20px;
+/* margin-right: 50px;
+margin-top: 20px; */
+margin: 20px;
 padding: 15px 15px 0 0;
 position: relative;
 /* box-shadow: 0px 6px 10px rgba(250, 36, 36, 1); */
 border: 11.5px solid rgba(250, 36, 36, 1);
 border-radius: 10px ;
 cursor: pointer;
+transition: all 1s ease-in-out;
 }
 
 .intern-reviews .carousel__face:hover {
@@ -30,6 +45,9 @@ justify-content: space-around;
 .carousel__face img{
 width: 120px;
 border-radius: 10px;
+}
+h3{
+    margin: 0;
 }
 
 .intern-reviews .heading-container h1{
@@ -64,23 +82,22 @@ background-size: 100%;
 padding-left: 18px;
 }
 
-.intern-reviews .mobile_container{
+/* .intern-reviews .mobile_container{
 display: none;
-}
+} */
 
 .carousel__face .curve{
 position: absolute;
 bottom: 0;
-width: 300px;
+width: 100%;
 background-image: linear-gradient(45deg, #fb8721, #fa2424);
 }
 
-.intern-reviews .slider {
-overflow: hidden;
-}
-
 .intern-reviews .slide-track {
-animation: scroll 100s linear infinite;
+animation: scroll 20s linear infinite;
+width: calc(250px * 18);
+border: 2px solid rgb(255, 0, 208);
+display: flex;
 }
 
 .intern-reviews .slide-track:hover {
@@ -94,71 +111,5 @@ transform: translateX(0);
 100% {
 transform: translateX(calc(-250px * 9));
 }
-}
-
-@media(max-width: 780px) {
-
-    body {
-        position: relative;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .intern-reviews .mobile_container{
-        display: block;
-    }
-
-    .intern-reviews .carousel {
-        display: none;
-    }
-
-    .intern-reviews .heading-container h1 {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .intern-reviews .mobile_carousel__face {
-        height: 380px;
-        border-radius: 10px;
-        border: 3px solid red;
-    }
-
-    .mobile_carousel__face .info {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .mobile_carousel__face .review-content {
-        padding: 0 12px;
-        overflow: scroll;
-    }
-
-    .mobile_carousel__face .curve{
-        position: absolute;
-        bottom: 0;
-        width: 300px;
-        background-image: linear-gradient(45deg, #fb8721, #fa2424);
-    }
-
-    .mobile_carousel__face img {
-        height: 100px;
-        width: 100px;
-        margin-top: 8px;
-        border-radius: 8px;
-    }
-
-    .swiper {
-        width: 300px;
-        height: 300px;
-        padding: 50px;
-    }
-
-    .swiper-slide {
-        /* background-position: center; */
-        /* background-size: cover; */
-        width: 350px;
-        height: 550px;
-    }
 }
 

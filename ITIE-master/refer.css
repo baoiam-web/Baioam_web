@@ -437,7 +437,7 @@ button:hover{
 	border-radius: 20px;
 	height: 380px;
 	margin: 10px;
-	padding: 10px;
+	/* padding: 10px; */
 	padding-bottom: 0;
 	background: #fff;
 	position: relative;
@@ -480,13 +480,14 @@ button:hover{
 	font-weight: 500;
 }
 .intern-reviews .review-content{
-	margin: 30px;
-	color: #031864;
-	text-align: justify;
-	font-size: 17px;
+	  margin: 22px;
+  	justify-content: center;
+  	color: #031864;
+  	text-align: left;
+  	font-size: 15px;
 }
 .intern-reviews .curve{
-	position: absolute;
+	position: relative;
 	left: 0;
 	bottom: 0;
 	background-image: linear-gradient(45deg, #fb8721, #fa2424);

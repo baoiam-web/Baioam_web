@@ -237,13 +237,27 @@ button:hover {
 .interns-container .sec1-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
 }
 .interns-container .sec1-container .content-container {
   width: 50%;
   margin-top: 20px;
   margin-left: 50px;
 }
+
+@media screen and (max-width: 875px) {
+  .interns-container .sec1-container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+  }
+  .interns-container .sec1-container .content-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
 .interns-container .hheading h1 {
   color: #031864;
   margin: 0 0;
@@ -630,6 +644,15 @@ footer .contact-us p div i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 2px solid red;
+}
+
+@media (max-width: 875px) {
+  .heading h3 span {
+    font-size: 3rem;
+  }
+  .heading h3 {
+    font-size: 3rem;
+  }
 }
 .refer_row {
   display: flex;

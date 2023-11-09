@@ -5,9 +5,9 @@ window.addEventListener("scroll", function () {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-100px';
+    navbar.style.top = '-200px';
     dropdown.forEach(function(menu) {
-      menu.style.top = '-100px';
+      menu.style.top = '-200px';
   });
   } else {
     navbar.style.top = '0';

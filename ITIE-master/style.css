@@ -69,3 +69,18 @@
 .main-heading {
   margin-top: 18px;
 }
+
+@media screen and (max-width: 877px) {
+  .content_list1 {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .benefits {
+    margin-left: 15px;
+  }
+}

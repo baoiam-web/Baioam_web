@@ -83,4 +83,10 @@
   .benefits {
     margin-left: 15px;
   }
+
+  .arrow {
+    padding-left: 50px;
+    padding-top: 0;
+    rotate: 90deg;
+  }
 }

@@ -355,7 +355,7 @@ header .nav-item a:hover {
 .heading h1 {
   color: white;
   font-size: 3.8rem;
-  margin: 20px 0;
+  margin-bottom: -25px;
   font-weight: bold;
   text-align: center;
 }

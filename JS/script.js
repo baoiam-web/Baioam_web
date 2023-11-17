@@ -1,15 +1,24 @@
 var lastScrollTop = 0;
-navbar = document.getElementById('navbar');
+var navbar = document.getElementById('navbar');
+var dropdown = document.querySelectorAll('.dropdown-menu');
 window.addEventListener("scroll", function () {
-  var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-100px';
+    navbar.style.top = '-200px';
+    dropdown.forEach(function(menu) {
+      menu.style.top = '-200px';
+  });
   } else {
     navbar.style.top = '0';
+    dropdown.forEach(function(menu) {
+      menu.style.top = '65px';
+  });
+
   }
   lastScrollTop = scrollTop;
-})
+});
+
 
 
 $('.carousel').carousel({

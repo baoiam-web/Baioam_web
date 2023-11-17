@@ -20,7 +20,7 @@
 .cb{
     clear: both;
 }
-body {
+body,html{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -194,6 +194,7 @@ section {
     display: contents;
 }
 .contact-menu{
+    width: 100%;
     display:flex;
 }
 .space{
@@ -297,7 +298,15 @@ section {
     width: 100%;
     padding: 10px;
     /* text-align: center; */
+
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 
 /* .subcomment  */
@@ -372,6 +381,7 @@ section {
     font-weight: 550;
     /* background-color: #fb8721; */
 }
+
 .submit-btn{
  /* border: 1px solid black; */
  margin: 0 auto;
@@ -390,7 +400,6 @@ section {
 .contact-btn:hover {
     background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
 }
-
 
 
 
@@ -418,6 +427,9 @@ section {
 }
 
 .subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     margin-bottom: -5rem;
     background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
@@ -709,7 +721,7 @@ footer .contact-us p div i {
             font-size: 1.1rem;
         }
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
 body{
     position: absolute;
-}}
+}} */

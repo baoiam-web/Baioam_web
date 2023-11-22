@@ -11,6 +11,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 :root {
   --color-orange: linear-gradient(45deg, #fa2424, #ed7e1e);
@@ -1795,6 +1800,372 @@ section div.wrapper {
   }
 }
 
+/* otp section css */
+.otp-section{
+  width: 100%;
+  position: relative;
+  /* height: 60em; */
+}
+.FormContainer {
+  width: 100%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* background-color: rgb(0, 77, 102); */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.box1 {
+  width: 50%;
+  height: 600px;
+  /* background-color: green; */
+}
+
+form {
+  width: 100%;
+  margin-left: 4.5rem;
+  padding: 1rem;
+}
+
+.box2 {
+  width: 50%;
+  height: 600px;
+  /* background-color: red; */
+  object-fit: cover;
+  object-position:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 h2 {
+  width: 700px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  padding-right: 50px;
+  color: #040052;
+}
+
+.box1 .underline {
+  position: relative;
+  background: -webkit-linear-gradient(0deg, #fa2424, #fb8721);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid rgb(245, 69, 0);
+}
+
+.otpAndDate {
+  width: 600px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.otpParagraph{
+  color: #5e5e5e;
+  font-size: 17.6px;
+  padding-top: 0px;
+  margin: 0;
+}
+#date {
+  width: 200px;
+  height: 48px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid #040052;
+  color: #5e5e5e;
+
+}
+
+.box1 #phone,
+#bookBtn,
+#otp {
+  width: 600px;
+  padding: 25px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #040052;
+
+}
+
+.re-otp{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+#genOtpBtn {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  height: 56px;
+  padding: 1.5em 2.8em;
+  color: #040052;
+  border: 2px solid #040052;
+  border-radius: 2px;
+  transition: ease .5s;
+}
+
+#genOtpBtn:hover {
+  background-color: #040052;
+  color: white;
+  border: 2px solid #040052;
+}
+
+
+#bookBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(45deg, #ff8000, #ff0000);
+  cursor: pointer;
+  border: none;
+}
+
+#bookBtn:hover {
+  background-image: linear-gradient(45deg, #ff0000, #ff8000);
+}
+
+#resendOtp {
+  background-color: transparent;
+  height: 56px;
+  border: none;
+  text-underline-offset: 5px;
+  text-decoration: underline #040052;
+  font-size: 17.6px;
+  color: #5e5e5e;
+  transition: ease .5s;
+}
+#resendOtp:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.iti input,
+.iti input[type=text],
+.iti input[type=number] {
+  padding-right: 48%;
+  height: 48px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box1 .firstp {
+  font-size: 17.6px;
+  padding: 20px 0;
+  color: #5e5e5e;
+}
+@media screen and (min-width:1238px) and (max-width: 1554px){
+  .box1,.box2{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+form {
+  margin-left: 0%;
+  padding: 1rem 0;
+}
+.otpAndDate {
+  margin-top: 20px;
+}
+}
+@media screen and (min-width:1000px) and (max-width: 1238px){
+  .box1 h2 {
+    width:440px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  form {
+    margin-left: 0%;
+    padding: 0rem 0;
+  }
+  .otpParagraph{
+    font-size: 15px;
+    padding-top: 0px;
+    margin: 0;
+  }
+  .box1 #phone,
+#bookBtn,
+#otp {
+  width: 440px;
+}
+.otpAndDate {
+  width: 440px;
+  margin-top: 10px;
+}
+  #date{
+    padding: 0 0 0 10px;
+  }
+  #otp{
+    margin-top: 10px;
+  }
+  .re-otp{
+    width:440px;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  #resendOtp {
+  font-size: 15px;
+  }
+  #genOtpBtn{
+    height: 30px;
+    margin-top: 20px;
+    padding: 0 25px;
+    font-size: 15px;
+  }
+  .box1 .firstp {
+    font-size: 15px;
+    padding: 0%;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+}
+@media screen and (max-width: 1010px){
+  .FormContainer {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .box1,.box2{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+@media screen and (max-width: 776px){
+  .box1{
+    padding-left:18px ;
+  }
+  .box1 h2 {
+    width:440px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .box1,.box2{
+    height: fit-content;
+  }
+  .otpParagraph{
+    font-size: 15px;
+    padding-top: 0px;
+    margin: 0;
+  }
+  .box1 #phone,
+#bookBtn,
+#otp {
+  width: 440px;
+}
+.otpAndDate {
+  width: 440px;
+  margin-top: 10px;
+}
+
+  #date{
+    padding: 0 0 0 10px;
+  }
+  #otp{
+    margin-top: 10px;
+  }
+  .re-otp{
+    width:440px;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  #resendOtp {
+  font-size: 15px;
+  }
+  #genOtpBtn{
+    height: 48px;
+    margin-top: 30px;
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  .box1 .firstp {
+    font-size: 15px;
+    padding: 0%;
+    margin: 10px 0;
+    text-align: left;
+  }
+
+}
+
+
+@media screen and (max-width:540px){
+
+  form{
+  margin: 0;
+}
+
+.box1 h2 {
+  width:267px;
+  padding: 0;
+  font-size: 23px;
+  line-height: 36px;
+}
+.otpParagraph{
+  font-size: 14px;
+  padding-top: 0px;
+  margin: 0;
+}
+.box1 #phone,
+#bookBtn,
+#otp {
+  width: 267px;
+}
+.otpAndDate {
+  width: 267px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#date{
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+}
+#otp{
+  margin-top: 30px;
+}
+.re-otp{
+  width:267px;
+  height: 30px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#resendOtp {
+font-size: 14px;
+}
+
+}
+@media screen and (max-width:414px){
+  .box1,.box2{
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width:375px){
+  #otp{
+    margin-top: 30px;
+  }
+ 
+}
 /* Subscribe */
 .subscribe {
   display: flex;

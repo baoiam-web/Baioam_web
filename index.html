@@ -51,6 +51,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" />
 
     <!-- 
     - preload images
@@ -1371,6 +1372,46 @@
       </div>
     </div>
 
+    <!-- Otp Section Start -->
+    <section class="otp-section">
+    <div class="FormContainer">
+      <div class="box1">
+        <form action="">
+          <h2>Crack your <span class="underline">goal</span> with India’s <span class="underline">top</span> educators
+          </h2>
+          <p class="firstp">Over 10 crore learners trust us for their preparation</p>
+  
+          <input type="number" id="phone" placeholder="Enter your mobile number" required>
+  
+          <div class="otpAndDate">
+            <p class="otpParagraph" >We’ll send an OTP for verification</p>
+  
+            <label for="date"></label>
+            <input type="text" id="date" placeholder="Select a date" onfocus="this.type='date'" .onblur="this.type='text'"
+              required>
+          </div>
+          <div id="otp-section" style="display: none;">
+            <label for="otp"></label>
+            <input type="text" id="otp" placeholder="Enter the OTP received" required>
+          </div>
+          <div class="btnDiv">
+            <button id="genOtpBtn" onclick="generateOTP()" style="display: flex; justify-content: flex-start;">Generate
+              OTP</button>
+            <div class="re-otp">
+              <button id="resendOtp" onclick="resendOtp()" style="display: none;">resend OTP</button>
+            </div>
+          </div>
+  
+          <button onclick="bookAppointment()" id="bookBtn" style="display: none;">Book Appointment</button>
+        </form>
+      </div>
+  
+      <div class="box2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9dIflMB-OmYUabXhVBUt5ITbR1BIwB2sQAF0sLi7m4oi0NeF" alt="">
+      </div>
+    </div>
+    </section>
+
     <!-- Associations with partners -->
     <section class="startups">
       <div class="wrapper">
@@ -1607,6 +1648,8 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js"></script>
     <script src="JS/script.js"></script>
     <script>
       function alertmessage() {

@@ -1,3 +1,17 @@
+$(document).ready(function() {
+  $("#phone").intlTelInput({
+    separateDialCode: true,
+  });
+});
+
+function generateOTP() {
+var phoneNumber = $("#phone").intlTelInput("getNumber");
+var appointmentDate = $("#date").val();
+$('#genOtpBtn').css("display","none")
+$('#resendOtp').css("display","block")
+$("#otp-section").show();
+$("#bookBtn").show();
+}
 var lastScrollTop = 0;
 var navbar = document.getElementById('navbar');
 var dropdown = document.querySelectorAll('.dropdown-menu');

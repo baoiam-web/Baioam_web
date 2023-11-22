@@ -179,7 +179,7 @@ header .nav-item a:hover {
 
 .benefits h1 {
   font-family: "Open Sans";
-  font-size: 70px;
+  font-size: 50px;
   text-transform: capitalize;
   font-weight: 900;
   background-image: linear-gradient(to right, #fb8721, #fa2424);
@@ -190,6 +190,7 @@ header .nav-item a:hover {
 .benefits ul li {
   text-align: justify;
   font-size: 22px;
+  list-style: disc;
 }
 button {
   display: inline;
@@ -213,7 +214,7 @@ button:hover {
   font-family: "Open Sans";
   text-align: center;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 50px;
   color: #031864;
   margin-bottom: 20px;
 }
@@ -322,7 +323,7 @@ button:hover {
   font-family: "Open Sans";
   text-align: center;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 50px;
   color: #031864;
   margin-bottom: 20px;
 }
@@ -633,13 +634,13 @@ footer .contact-us p div i {
   margin-top: 160px;
 }
 .heading h3 {
-  font-size: 65px;
+  font-size: 50px;
   color: #031864;
   padding-left: 30px;
   font-weight: bold;
 }
 .heading h3 span {
-  font-size: 65px;
+  font-size: 50px;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -753,7 +754,7 @@ form input {
 }
 
 .titale h2 {
-  font-size: 55px;
+  font-size: 50px;
   color: #031864;
   font-weight: bold;
   text-align: center;
@@ -761,7 +762,7 @@ form input {
 }
 
 .titale h2 span {
-  font-size: 55px;
+  font-size: 50px;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -876,9 +877,10 @@ form input {
   font-size: 18px;
   color: gray;
   padding: 20px 0px;
+  margin-top: 20px;
 }
 .why_head h3 {
-  font-size: 55px;
+  font-size: 50px;
   color: #031864;
   font-weight: bold;
   padding-bottom: 10px;

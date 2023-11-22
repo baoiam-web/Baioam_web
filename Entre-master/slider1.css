@@ -150,7 +150,7 @@ input[type="radio"] {
 
 @media (max-width: 768px) {
   .slider1 h1 {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 0 2rem;
   }
   .slider1 .textp {

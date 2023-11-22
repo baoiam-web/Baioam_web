@@ -32,7 +32,7 @@
 
 .team-container h1 {
   margin-top: 7%;
-  font-size: 48px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   color: rgb(4, 4, 91);
@@ -108,7 +108,7 @@
 }
 
 .contact-left h2 {
-  font-size: clamp(1.5rem, calc(-0.235rem + 3vw), 2.5rem);
+  font-size: clamp(1.5rem, calc(-0.235rem + 3vw), 3rem);
   padding-bottom: 0;
 }
 

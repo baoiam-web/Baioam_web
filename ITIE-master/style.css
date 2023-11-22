@@ -90,3 +90,28 @@
     rotate: 90deg;
   }
 }
+
+.intern-pic {
+  width: 50%;
+}
+.list2 {
+  flex-basis: 50%;
+}
+
+.list2 img {
+  width: 100%;
+}
+
+.rf_col2 img {
+  width: 120%;
+}
+
+@media (max-width: 1000px) {
+  .intern-pic {
+    width: 100%;
+  }
+  .rf_col2 img {
+    margin: 0;
+    width: 100%;
+  }
+}

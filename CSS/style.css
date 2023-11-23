@@ -46,12 +46,14 @@ a {
   text-decoration: none !important;
 }
 
-section:not(.contact-us,
-  .footer-container,
-  #courses,
-  .section-4,
-  .carousel-inner) {
-  padding: 2rem 6%;
+section:not(
+    .contact-us,
+    .footer-container,
+    #courses,
+    .section-4,
+    .carousel-inner
+  ) {
+  padding: 3rem 6%;
 }
 
 h1,
@@ -98,7 +100,7 @@ header .nav-item a {
     font-size: 0.9rem;
   }
 
-  #nav-courses-one .dropdown-toggle+.dropdown-menu>.nav-link {
+  #nav-courses-one .dropdown-toggle + .dropdown-menu > .nav-link {
     padding-left: 1.5rem;
     padding-top: 0;
   }
@@ -156,7 +158,6 @@ header .nav-item a:hover {
 }
 
 @media (max-width: 1000px) {
-
   .btn-1,
   .btn-2 {
     padding: 0.6em 1em;
@@ -164,7 +165,6 @@ header .nav-item a:hover {
 }
 
 @media (max-width: 900px) {
-
   .btn-1,
   .btn-2 {
     padding: 0.4em 0.7em;
@@ -712,7 +712,7 @@ header .nav-item a:hover {
 .section-3 .explore-btn {
   position: relative;
   margin-top: 1.5rem;
-  top: 2.0rem;
+  top: 2rem;
   margin-bottom: 1rem;
   padding: 1em 1.5em;
 }
@@ -906,7 +906,7 @@ section.work .contents p {
     padding: inherit 0;
   }
 
-  #virtues-row.row>.col-sm-12 {
+  #virtues-row.row > .col-sm-12 {
     max-width: 100%;
   }
 
@@ -942,12 +942,14 @@ section.work .contents p {
 
 /* Expert section */
 section.expert {
-  background-image: linear-gradient(to right,
-      #f22222,
-      #f3461c,
-      #f35e19,
-      #f37319,
-      #f2851e);
+  background-image: linear-gradient(
+    to right,
+    #f22222,
+    #f3461c,
+    #f35e19,
+    #f37319,
+    #f2851e
+  );
   color: #fff;
   font-family: "PT Sans", sans-serif;
   padding: 5rem auto !important;
@@ -971,12 +973,14 @@ section.expert p.line::before {
   left: 35px;
   width: 2px;
   height: 60px;
-  background-image: linear-gradient(to top,
-      #e23b1c,
-      #de0045,
-      #ca0067,
-      #a80b83,
-      #782c96);
+  background-image: linear-gradient(
+    to top,
+    #e23b1c,
+    #de0045,
+    #ca0067,
+    #a80b83,
+    #782c96
+  );
 }
 
 section.expert .about {
@@ -995,8 +999,6 @@ section.expert .about h4 {
   font-weight: 700;
   margin-bottom: 0;
 }
-
-
 
 @media (max-width: 576px) {
   section.expert {
@@ -1046,12 +1048,14 @@ section.contact-us {
 }
 
 section.contact-us .left {
-  background-image: linear-gradient(to right,
-      #fa2424,
-      #fb471f,
-      #fc601c,
-      #fc751c,
-      #fb8721);
+  background-image: linear-gradient(
+    to right,
+    #fa2424,
+    #fb471f,
+    #fc601c,
+    #fc751c,
+    #fb8721
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1122,12 +1126,14 @@ section .contact-us-box {
 }
 
 .orange-bg {
-  background-image: linear-gradient(to right,
-      #f12721,
-      #f3471c,
-      #f45f19,
-      #f57319,
-      #f5851e);
+  background-image: linear-gradient(
+    to right,
+    #f12721,
+    #f3471c,
+    #f45f19,
+    #f57319,
+    #f5851e
+  );
   color: #fdecbe !important;
   border-radius: 5px;
   width: 100%;
@@ -1334,8 +1340,7 @@ p.virtues-sub-heading {
 
 .swipe-heading p {
   text-align: center;
-  margin: 2rem auto 3rem
-
+  margin: 2rem auto 3rem;
 }
 
 .swipe-heading h1 {
@@ -1404,7 +1409,7 @@ p.virtues-sub-heading {
   font-size: 12px;
 }
 
-.nav-courses-list>li>a {
+.nav-courses-list > li > a {
   display: flex;
   width: 100%;
   padding: 15px 20px;
@@ -1417,12 +1422,12 @@ p.virtues-sub-heading {
   transition: all 150ms ease;
 }
 
-.nav-courses-list>li>a:hover {
+.nav-courses-list > li > a:hover {
   color: orangered !important;
   background-color: rgba(241, 214, 164, 0.603);
 }
 
-.nav-courses-list>li .bar {
+.nav-courses-list > li .bar {
   content: "";
   position: absolute;
   height: 100%;
@@ -1927,7 +1932,6 @@ footer .contact-us p div i {
   display: flex;
   justify-content: space-between;
   /* border: 2px solid green; */
-
 }
 
 .meet_img {
@@ -1955,7 +1959,7 @@ footer .contact-us p div i {
 .expertImage .about p {
   padding-bottom: 1rem;
 }
-@media only screen and (min-width:1024px) and (max-width: 1280px) {
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .expertImage {
     width: 275px;
     height: 285px;
@@ -1975,13 +1979,11 @@ footer .contact-us p div i {
   }
 }
 
-@media only screen and (min-width:912px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 912px) and (max-width: 1024px) {
   .expertImage {
     width: 275px;
     height: 250px;
     padding: 10px;
-
   }
   .expertImage img {
     width: 100%;
@@ -1997,12 +1999,11 @@ footer .contact-us p div i {
   }
 }
 
-@media only screen and (min-width:800px) and (max-width: 912px) {
+@media only screen and (min-width: 800px) and (max-width: 912px) {
   .expertImage {
     width: 275px;
     height: 225px;
     padding: 10px;
-
   }
   .expertImage .about h4 {
     font-size: 14px;
@@ -2013,12 +2014,11 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:541px) and (max-width: 800px) {
+@media only screen and (min-width: 541px) and (max-width: 800px) {
   .expertImage {
     width: 275px;
     height: 200px;
     padding: 10px;
-
   }
   .expertImage .about h4 {
     font-size: 14px;
@@ -2029,9 +2029,8 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:450px) and (max-width: 540px) {
-
-  .experts{
+@media only screen and (min-width: 450px) and (max-width: 540px) {
+  .experts {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2049,9 +2048,8 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:400px) and (max-width: 450px) {
-
-  .experts{
+@media only screen and (min-width: 400px) and (max-width: 450px) {
+  .experts {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2069,9 +2067,8 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:361px) and (max-width: 400px) {
-
-  .experts{
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+  .experts {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2089,9 +2086,8 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:281px) and (max-width: 360px) {
-
-  .experts{
+@media only screen and (min-width: 281px) and (max-width: 360px) {
+  .experts {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2109,9 +2105,8 @@ footer .contact-us p div i {
     padding-bottom: 1rem;
   }
 }
-@media only screen and (min-width:0px) and (max-width: 280px) {
-
-  .experts{
+@media only screen and (min-width: 0px) and (max-width: 280px) {
+  .experts {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -2130,14 +2125,12 @@ footer .contact-us p div i {
   }
 }
 @media only screen and (max-width: 1000px) {
-
   #baoiam-info .col-sm-12:last-child {
     padding-bottom: 1.5em;
   }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 500px) {
-
   #virtues-tab-1-content.virtues-tab-content-item .row,
   #virtues-tab-2-content.virtues-tab-content-item .row,
   #virtues-tab-3-content.virtues-tab-content-item .row {

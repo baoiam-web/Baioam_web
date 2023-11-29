@@ -3,11 +3,11 @@
   /* width:100% */
   width: 90%;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 15px 15px;
 }
 .slider1 .container .main-card {
   display: flex;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly; */
   width: 200%;
   transition: 1s;
 }

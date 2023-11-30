@@ -25,14 +25,14 @@ body {
   width: 250px;
   height: 150px;
   border: 2px solid red;
-  margin-left: -180px;
+  margin-left: -155px;
   margin-top: -115px;
 
 }
 .wep img{
   height: 150px; 
-  width: 220px;
-  /* border: 2px solid black; */
+  width: 250px;
+  border: 2px solid black;
 
 }
 

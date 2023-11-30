@@ -14,16 +14,17 @@ body {
 }
 /* wep image */
 .wep{
-  width: 100%;
+  width: 250px;
   height: 150px;
   /* border: 2px solid red; */
-  overflow: hidden;
-  margin-top: 5px;
+  margin-left: 20px;
+  /* overflow: hidden; */
+  /* margin-top: 5px; */
 }
 .wep img{
-  height: 170px; 
+  height: 150px; 
+  width: 220px;
   /* border: 2px solid black; */
-  margin-bottom:10px ;
 
 }
 

@@ -10,7 +10,7 @@ var swiper = new Swiper('.blog-slider', {
       el: '.blog-slider__pagination',
       clickable: true,
     }
-
+}
 
 
     const wepAccordionFaqItemHeaders = document.querySelectorAll(".wep-accordion-faq-item-header");

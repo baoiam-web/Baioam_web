@@ -16,15 +16,15 @@ body {
 .wep{
   width: 250px;
   height: 150px;
-  /* border: 2px solid red; */
-  /* margin-left: 15px; */
-  /* overflow: hidden; */
-  /* margin-top: 5px; */
+  border: 2px solid red;
+  /* margin-top: -30px; */
 }
 .wep img{
   height: 250px; 
   width: 300px;
   /* border: 2px solid black; */
+  margin-top: -50px;
+
 
 }
 

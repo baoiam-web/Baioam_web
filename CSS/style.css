@@ -54,7 +54,7 @@ section:not(
     .carousel-inner
   ) {
   padding: 1rem 6%;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 
 h1,

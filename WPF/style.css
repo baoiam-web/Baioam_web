@@ -17,13 +17,13 @@ body {
   width: 250px;
   height: 150px;
   /* border: 2px solid red; */
-  margin-left: 20px;
+  /* margin-left: 15px; */
   /* overflow: hidden; */
   /* margin-top: 5px; */
 }
 .wep img{
-  height: 150px; 
-  width: 220px;
+  height: 250px; 
+  width: 300px;
   /* border: 2px solid black; */
 
 }

@@ -16,7 +16,7 @@ body {
 .wep{
   width: 250px;
   height: 150px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* margin-top: -30px; */
 }
 .wep img{

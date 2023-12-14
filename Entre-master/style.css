@@ -372,13 +372,13 @@ p {
   border-radius: 20px;
   font-size: 1.3rem;
   padding: 1rem;
-  width: 40vw;
+  width: 20vw;
   cursor: pointer;
   color: white;
 }
 .unique {
   margin-top: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #031864;
   text-align: center;

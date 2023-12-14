@@ -205,6 +205,7 @@ header .nav-item a:hover {
 .second-half .images {
   display: flex;
   justify-content: center;
+  gap: 0.7rem;
 }
 .first-image-div,
 .second-image-div {
@@ -337,7 +338,6 @@ p {
   margin-bottom: 2rem;
   text-align: center;
   margin: 3rem auto 3rem;
-
 }
 
 .third .program {
@@ -375,6 +375,13 @@ p {
   width: 40vw;
   cursor: pointer;
   color: white;
+}
+.unique {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #031864;
+  text-align: center;
 }
 
 .third #thumbnail {
@@ -693,13 +700,27 @@ footer .contact-us p div i {
 }
 
 @media (max-width: 528px) {
+  .first-half {
+    padding: 0;
+  }
+  .first-half .text-div h1 {
+    font-size: 3.6rem;
+  }
   .first-half .text-div p {
+    padding: 0;
     font-size: 1.8rem;
   }
+  .first-half img {
+    width: 150vw;
+  }
+  .second-half h1 {
+    line-height: 4.3rem;
+  }
   .second-half .text-div {
-    width: 40rem;
+    width: 45rem;
   }
   .second-half .text-div p {
+    padding: 0;
     font-size: 1.8rem;
   }
   .second .text-div {
@@ -715,8 +736,12 @@ footer .contact-us p div i {
   .third .program-text {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
   }
+  #ht {
+    width: 44rem;
+  }
+
   .third .text-div {
     width: 40rem;
   }
@@ -734,12 +759,15 @@ footer .contact-us p div i {
   }
 
   .program .program-text p {
-    width: 40rem;
+    width: 45rem;
+    margin-left: 1rem;
+    /* width: 40rem; */
     font-size: 1.8rem;
   }
   .program .program-text button {
-    margin-left: 6rem;
-    width: 30rem;
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 1.8rem;
   }
   .features {
     flex-direction: column;

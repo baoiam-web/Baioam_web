@@ -65,13 +65,18 @@
     <link rel="preload" as="image" href="images/image-1.jpg" />
 
     <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css"
-    />
+
     <link rel="stylesheet" href="otp.css" />
     <!--Js-->
     <script src="JS/navbar.js" defer></script>
+
+    <!-- otp section  -->
+    <link
+      rel="stylesheet"
+      href="./otpsection/international-telephone-input.css"
+    />
+
+    <link rel="stylesheet" href="./otpsection/otp.css" />
     <style>
       .relative {
         position: absolute;
@@ -173,12 +178,12 @@
                       >
                     </li>
 
-                   <li>
+                    <li>
                       <a class="test" href="./course-master/DataAnalyst.html"
                         >DataAnalyst</a
                       >
                     </li>
-                    
+
                     <li>
                       <a class="test" href="./course-master/DataScience.html"
                         >DataScience</a
@@ -1387,86 +1392,59 @@
       </div>
     </div>
 
+    <!-- otp section  -->
+
     <div class="otp-section">
-      <section class="FormContainer" style="padding-bottom: 0.5rem">
-        <div class="box_1">
-          <form action="">
-            <h2>
-              Crack your <span class="underline">goal</span> with India’s
-              <span class="underline">top</span> educators
-            </h2>
-            <p class="firstp">
-              Over 10 crore learners trust us for their preparation
-            </p>
-            <br />
-
-            <input
-              type="number"
-              id="phone"
-              placeholder="Enter your mobile number"
-              required
-            />
-
-            <div class="otpAndDate">
-              <p class="otpParagraph" style="color: #5e5e5e; font-size: 14px">
-                We’ll send an OTP for verification
-              </p>
-
-              <label for="date"></label>
+      <div class="otp-box-wrapper">
+        <div class="otp-box1">
+          <div class="otpimg">
+            <img src="./images/13.jpg" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="otp-box2">
+          <h1>
+            Crack your <span class="styledtext">goal</span> with India’s
+            <span class="styledtext">top</span> educators
+          </h1>
+          <p>Over 10 crore learners trust us for their preparation</p>
+          <form class="otp-generator-box">
+            <div class="iti">
+              <input type="tel" name="phone" id="phone" readonly />
+              <input type="tel" name="phonenumber" id="phonenumber" required />
+            </div>
+            <div class="appoiintment-date">
+              <p>We'll send an OTP for verification</p>
               <input
                 type="text"
-                id="date"
-                placeholder="Select a date"
-                onfocus="this.type='date'"
-                .onblur="this.type='text'"
+                name="appointment"
+                id="appointment"
+                placeholder="Select a Date"
+                onfocus="(this.type='date')"
                 required
               />
             </div>
-            <div id="otp-section" style="display: none">
-              <label for="otp"></label>
+            <div id="enterOTPsection">
               <input
                 type="text"
-                id="otp"
-                placeholder="Enter the OTP received"
+                class="enterOTP"
+                placeholder="Enter Your OTP"
                 required
               />
+              <button class="resendOTPbtn">resend OTP</button>
             </div>
-            <div class="btnDiv">
-              <button
-                id="genOtpBtn"
-                onclick="generateOTP()"
-                style="display: flex; justify-content: flex-start"
-              >
-                Generate OTP
-              </button>
-              <div class="re-otp">
-                <button
-                  id="resendOtp"
-                  onclick="resendOtp()"
-                  style="display: none"
-                >
-                  resend OTP
-                </button>
-              </div>
-            </div>
-
             <button
-              onclick="bookAppointment()"
-              id="bookBtn"
-              style="display: none"
+              class="generateOTP"
+              id="generateOTPbtn"
+              onclick="showenterOTP()"
             >
+              Generate OTP
+            </button>
+            <button id="bookappointmentbtn" type="submit">
               Book Appointment
             </button>
           </form>
         </div>
-
-        <div
-          class="box_2"
-          style="display: flex; align-items: center; justify-content: center"
-        >
-          <img src="./images/13.jpg" alt="" srcset="" />
-        </div>
-      </section>
+      </div>
     </div>
 
     <!-- Associations with partners -->
@@ -1713,8 +1691,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js"></script>
-
-    <script src="./otp.js"></script>
+    <script src="./otpsection/otp.js"></script>
+    <script src="./otpsection/international-telephone-input.js"></script>
   </body>
 </html>

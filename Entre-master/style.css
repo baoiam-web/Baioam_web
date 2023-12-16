@@ -681,7 +681,7 @@ footer .contact-us p div i {
     width: 85vw;
   }
   .third .program-text button {
-    width: 80vw;
+    width: 30vw;
   }
   .third .program img {
     display: block;
@@ -696,6 +696,9 @@ footer .contact-us p div i {
   .second .text-div p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
+  }
+  .slider1 .content h1 {
+    margin-top: 2rem;
   }
 }
 
@@ -755,7 +758,7 @@ footer .contact-us p div i {
     padding: 0;
   }
   .third .program img {
-    width: 100vw;
+    width: 120vw;
   }
 
   .program .program-text p {
@@ -780,15 +783,29 @@ footer .contact-us p div i {
   .second ul img {
     height: 5vh;
   }
+
+  .slider1 .content h1 {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .third .program img {
+    width: 160vw;
+  }
 }
 
 .slider1 .content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  width: 4.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  color: white;
 }
 .slider1 .content p {
   color: #031864;

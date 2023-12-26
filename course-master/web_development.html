@@ -44,8 +44,10 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="faq.css" />
     <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="../popup/popup.css">
 
     <!--js-->
+    <script src="../popup/popup.js" async></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       defer
@@ -56,6 +58,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+
     <script src="../JS/script.js" defer></script>
     <script src="./course-master-script.js" defer></script>
     <script src="../JS/navbar.js" defer></script>
@@ -260,8 +263,40 @@
           1+1 Offer: Get Internship & Job Preparation training FREE on purchase
           of Web Development training!
         </button>
-        <button class="btn-enroll">Enroll Now</button>
-      </div>
+        <button class="btn-enroll" onclick="showRegistrationForm()">Enroll Now</button>
+        <div id="registrationPopup" class="popup">
+          
+          <h2>Registration Form</h2>
+          <!-- Your registration form content goes here -->
+          <form class="formReg" method="post" action="#" name="submit-to-google-sheet" role="form">
+            <!-- Form fields go here -->
+            <input class="inp" type="text" name="Name" placeholder="Name" required>
+            <input class="inp" type="email" name="Email" placeholder="Email" required>
+            <input class="inp" type="number" name="MobileNo"  placeholder="Mobile no">
+            <input class="inp" type="date" name="Date"  placeholder="appointment date">
+            <select id="cading" name="Course" class="carding">
+              <option value="Courses">Select Course</option>
+              <option value="Product Development">
+                Product Management
+              </option>
+              <option value=" Enterpreneurship">
+                Entrepreneurship
+              </option>
+              <option value="Internship">Internship</option>
+              <option value="Internship">SAP FICO</option></select
+            >
+            <button class="btn-enroll" onclick="submitForm()" type="submit">Submit</button>
+        </div>
+          </form>
+        </div>
+    
+        <!-- Thank You Popup -->
+        <div id="thankyouPopup" class="popup thankyou-popup">
+          
+          <h2 style="margin: 10px 0;">Thank You!</h2>
+          <p style="margin: 10px 0;">Your registration is successful. We will contact you shortly.</p>
+          <button class="btn-enroll" onclick="closeThankYouPopup()">OK</button>
+        </div>
       <div class="pic">
         <img src="35.jpg" />
       </div>
@@ -890,8 +925,8 @@
 
   <!-- bootstrap -->
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"
   ></script>
 
@@ -938,6 +973,7 @@
         }
       });
     });
+
   </script>
 
   <!-- slider2 -->

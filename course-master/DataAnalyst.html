@@ -40,11 +40,15 @@
     <link rel="stylesheet" href="slider2.css"/>
 
     <!-- custom css  -->
+    <link rel="stylesheet" href="../popup/popup.css">
+
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="faq.css" />
     <link rel="stylesheet" href="style3.css" />
 
     <!--js-->
+    <script src="../popup/popup.js" async></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       defer
@@ -272,7 +276,7 @@
           1+1 Offer: Get Internship & Job Preparation training FREE on purchase
           of Graphic Designing training!
         </button>
-        <button class="btn-enroll">Enroll Now</button>
+        <button class="btn-enroll" onclick="showRegistrationForm()" >Enroll Now</button>
       </div>
       <div class="pic">
         <img src="../images/4.jpg" />
@@ -917,6 +921,68 @@
         </div>
       </div>
     </footer>
+    <div id="registrationPopup" class="popup">
+          
+      <h1>Enroll <span class="underline">today</span> and start your journey <span class="underline">with us</span></h1>
+      <!-- Your registration form content goes here -->
+      <form class="formReg" method="post" action="#" name="submit-to-google-sheet" role="form">
+        <!-- Form fields go here -->
+        <input class="inp" type="text" name="Name" placeholder="Name" required>
+        <input class="inp" type="email" name="Email" placeholder="Email" required>
+        <input class="inp" type="number" name="MobileNo"  placeholder="mobile no">
+        <input class="inp" type="date" name="Date"  placeholder="appointment date">
+        <select id="cading" name="Course" class="carding">
+          <option value="Courses">Select Course</option>
+          <option value="Product Development">
+            Product Management
+          </option>
+          <option value="Web_Development">
+            Web_Development
+          </option>
+          <option value="DataScience">
+            Data Science
+          </option>
+          <option value="DataAnalyst">
+            Data analyst
+          </option>
+          <option value="Content Writting">
+            Content Writting
+          </option>
+          <option value="Graphics Designing">
+            Graphics Designing
+          </option>
+          <option value="Digital Marketing">
+            Digital Marketing
+          </option>
+          <option value="Human_Resources">
+            Human_Resources
+          </option><option value="Corporate law">
+            Corporate law
+          </option>
+          <option value=" Enterpreneurship">
+            Entrepreneurship
+          </option>
+          <option value="Woman Enterpreneurship">
+           Woman Entrepreneurship
+          </option>
+          <option value="Seo Marketing">
+            Seo Marketing
+           </option>
+          <option value="Internship">Internship</option>
+          <option value="Sap Fico">SAP FICO</option></select
+        >
+        <button class="btn-enroll" onclick="submitForm()" type="submit">Submit</button>
+    </div>
+      </form>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thankyouPopup" class="popup thankyou-popup">
+      
+      <h2 style="margin: 10px 0;">Thank You!</h2>
+      <p style="margin: 10px 0;">Your registration is successful. We will contact you shortly.</p>
+      <button class="btn-enroll" onclick="closeThankYouPopup()">OK</button>
+    </div>
   </body>
 
   <!-- bootstrap -->

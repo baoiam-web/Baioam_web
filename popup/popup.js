@@ -1,7 +1,7 @@
 function showRegistrationForm() {
     document.getElementById('registrationPopup').style.display = 'flex';
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzvre7GkoomEQPkLlT7JcFJQvv9qUXTBDqKmWeIgB160_mwrHVN0G-MRKWpGz1gmbVF/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx4KuBtkzeGm7T-qUbfdaxlm4ckek0PnB9p0Bq-jQG9anQ370yvZzVthzV3N6E_Fi5swg/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 form.addEventListener('submit', e => {
